@@ -1,10 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Formularz</title>
 </head>
+
 <body>
-    <p>Zadanie 2</p>
+    <form action="https://formspree.io/m.szymanczuk@hotmail.com" method="POST">
+        <label for="imię">Imię:</label>
+        <input type="text" name="imię" id="imię">
+        <br>
+        <label for="nazwisko">Nazwisko:</label>
+        <input type="text" name="nazwisko" id="nazwisko">
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" name="_replyto" id="email">
+        <br>
+        <label for="telefon">Numer telefonu:</label>
+        <input type="number" name="telefon" id="numer telefonu">
+        <br>
+        <label for="miasto">Miasto:</label>
+        <select name="miasto" id="miasto">
+<option value="kraków">Kraków</option>
+<option value="warszawa">Warszawa</option>
+<option value="gdańsk">Gdańsk</option>
+</select>
+        <br>
+        <label for="płeć">Płeć:</label>
+        <input type="radio" name="płeć" id="płeć" value="Mężczyzna"> Mężczyzna
+        <input type="radio" name="płeć" id="płeć" value="Kobieta"> Kobieta
+        <br>
+        <input type="checkbox" name="dane" id="dane" value="zgoda"> Zgoda na dane osobowe
+        <br>
+        <label for="wiadomość">Wiadomość:</label>
+        <textarea name="message" id="wiadomośc" cols="30" rows="10"></textarea>
+        <input type="submit" value="Send">
+
+
+
+    </form>
+
+
+
+
 </body>
+
 </html>
