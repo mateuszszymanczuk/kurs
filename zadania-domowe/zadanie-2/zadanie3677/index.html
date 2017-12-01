@@ -10,13 +10,13 @@
 
 <body>
 
-    <form action="" autocomplete="on">
-           <fieldset style="border" id="klient">
-           <legend style="border">Customer Info</legend>
+    <form action="index.html" autocomplete="on">
+        <fieldset style="border" id="klient">
+            <legend style="border">Customer Info</legend>
             <label for="name">Name:</label>
             <input type="text" name="name" id="name" placeholder="Enter your name" required autofocus>
             <br>
-            <label for="number">Telephone:</label>
+            <label for="tel">Telephone:</label>
             <input type="tel" name="telephone" id="tel" placeholder="Pattern 1-234-567-8910" required pattern="1-234-567-8910">
             <br>
             <label for="mail">Email address: </label>
@@ -24,20 +24,20 @@
         </fieldset>
         <br>
 
-        <fieldset style="border" id="ksiazka">
+        <fieldset style="border" id="ramka">
             <legend style="border">Books</legend>
             <div id=ksiazka>
                 <br>
-                <label for="books"></label>
-                <input list="books">
-                <datalist id="books" multiple>
-            <option value="Zbrodnia i kara">
-            <option value="Idiota">
-            <option value="Bracia Karamazow">
-            <option value="Eugeniusz Oniegin">
-            <option value="Pan Tadeusz">
+                <label for="lista"></label>
+                <input list="books" id="lista">
+                <datalist id="books">
+                    <option value="Zbrodnia i kara">
+                    <option value="Idiota">
+                    <option value="Bracia Karamazow">
+                    <option value="Eugeniusz Oniegin">
+                    <option value="Pan Tadeusz">
             
-        </datalist>
+                </datalist>
                 <label for="quantity">Quantity (Maximum 5):</label>
                 <input type="number" name="quantity" id="quantity" max="5" min="1">
             </div>
