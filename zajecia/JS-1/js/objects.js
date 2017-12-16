@@ -1,5 +1,22 @@
 'use strict';
 
+class Uzytkownik {
+    constructor(imie, nazwisko){
+        this.imie = imie;
+        this.nazwisko = nazwisko;
+    }
+    wyswietlInfo(){
+        console.log("Imię: " + this.imie + ", Nazwisko: " + this.nazwisko);
+    }
+}
+
+var krystian = new Uzytkownik('Krystian', 'Dziopa');
+
+krystian.wyswietlInfo();
+
+var mateusz = new Uzytkownik('Mateusz', 'Szymanczuk');
+mateusz.wyswietlInfo();
+
 var osoba = {
     imie: 'Marcin',
     wzrost: 180,
@@ -8,5 +25,16 @@ var osoba = {
     }
 }
 
+
+
+
+
+/*
 console.log(osoba.imie);
+
 osoba.przedstawSie();
+
+
+osoba.nazwisko = 'Kowalski';
+
+console.log(osoba);*/
